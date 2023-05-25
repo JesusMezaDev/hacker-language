@@ -36,7 +36,7 @@ export const useApp = () => {
 
     watch(
         () =>
-            textToDecrypt.value, () => {
+            textToEncrypt.value, () => {
                 if (textToEncrypt.value.trim().length === 0) cryptedMessage.value = '';
             },
     );
